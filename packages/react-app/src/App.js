@@ -329,15 +329,21 @@ const styles = {
 };
 
 
-
 const Contract2Page = ({ amIStaker, rewardAccumulated, claimReward, stakeWallet, getRewardAccumulated, supplyRatio, tokenAddress }) => {
   return (
     <div className="Stake-container">
       <div className="dark-page">
         <div className="column">
-          <div className="box">
-            <h3 className="heading">Token Address</h3>
+        <div className="box">
             <div className="bigger-box">
+              <div className="top-section">
+                <div className="availability">
+                  <div className="circle"></div>
+                  <span>Active</span>
+                </div>
+                <div className="token-balance">Token Balance: <br /> 123CAMO</div>
+              </div>
+              <h3 className="heading">Token Address</h3>
               <div className="address-tab">
                 {tokenAddress}
               </div>
